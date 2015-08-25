@@ -1,0 +1,23 @@
+import config from '../config/environment';
+
+export function initialize() {
+  const instance = arguments[1] || arguments[0];
+  const container = !!arguments[1] ? arguments[0] : instance.container;
+
+  let ApplicationView = container.lookupFactory ?
+    container.lookupFactory('view:application') :
+    instance.resolveRegistration('view:application');
+
+  ApplicationView = ApplicationView.reopen({
+    didInsertElement() {
+      this._super(...arguments);
+      Ember.$(`.${config['ember-load'].loadingIndicatorClass}`).remove();
+    }
+  });
+
+}
+
+export default {
+  name: 'hide-loading-screen-instance',
+  initialize
+};
