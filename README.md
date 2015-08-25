@@ -2,7 +2,7 @@
 
 A simple loading indicator, while your static assets download, and your Ember.js app starts up.
 
-[![Build Status](https://travis-ci.org/mike-north/ember-'load'.svg?branch=master)](https://travis-ci.org/mike-north/ember-load)
+[![Build Status](https://travis-ci.org/mike-north/ember-load.svg?branch=master)](https://travis-ci.org/mike-north/ember-load)
 [![Code Climate](https://codeclimate.com/github/mike-north/ember-load/badges/gpa.svg)](https://codeclimate.com/github/mike-north/ember-load)
 [![npm version](https://badge.fury.io/js/ember-load.svg)](http://badge.fury.io/js/ember-load)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-load.svg)](http://emberobserver.com/addons/ember-load)
