@@ -35,6 +35,9 @@ And then place some HTML in your **app/index.html**
 
 The loading indicator will be removed when your application view is inserted into the DOM
 
+## Compatibility
+This add-on currently depends on the use of Views.  This means it is compatible with later versions of Ember (1.11.x+) or Ember 2.0 with the installation of [ember-legacy-views](https://github.com/emberjs/ember-legacy-views).
+
 
 ## Installation
 
