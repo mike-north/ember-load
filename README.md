@@ -35,6 +35,17 @@ And then place some HTML in your **app/index.html**
 
 The loading indicator will be removed when your application view is inserted into the DOM
 
+### But where do I find cool little spinners?!
+
+Anything that's purely CSS or plain JavaScript should work beautifully. You'll have the best luck with things that require no scripts or assets (i.e., images) to run in the browser.
+
+* [Spinkit](http://tobiasahlin.com/spinkit/)
+* [Single Element CSS Loaders](http://projects.lukehaas.me/css-loaders/)
+* [css-spinners.com](http://www.css-spinners.com/)
+* [CSS-only loaders](http://blog.pexels.com/css-only-loaders/)
+* [Tim Holman's Loaders and Spinners Collection](http://codepen.io/collection/HtAne/)
+* [cssload.net](http://cssload.net/)
+
 ## Compatibility
 This add-on currently depends on the use of Views.  This means it is compatible with later versions of Ember (1.11.x+) or Ember 2.0 with the installation of [ember-legacy-views](https://github.com/emberjs/ember-legacy-views).
 
