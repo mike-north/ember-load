@@ -19,8 +19,10 @@ const EMBER_VERSION_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:(?:\-(alpha|beta)\.
 const VERSION_INFO = EMBER_VERSION_REGEX.exec(Ember.VERSION);
 const isPre111 = parseInt(VERSION_INFO[1], 10) < 2 && parseInt(VERSION_INFO[2], 10) < 12;
 
-export function initialize(registry, application) {
+export function initialize() {
   if (isPre111) {
+    let registry = arguments[0];
+    let application = arguments[1];
     hideLoadingScreenInstanceInitializer.initialize(registry, application);
   }
 }
