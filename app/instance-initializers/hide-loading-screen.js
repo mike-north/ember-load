@@ -1,5 +1,7 @@
 import config from '../config/environment';
 
+const userConfig = config['ember-load'] || {};
+
 export function initialize() {
   const instance = arguments[1] || arguments[0];
   const container = !!arguments[1] ? arguments[0] : instance.container;
@@ -11,10 +13,12 @@ export function initialize() {
   ApplicationView = ApplicationView.reopen({
     didInsertElement() {
       this._super(...arguments);
-      Ember.$(`.${config['ember-load'].loadingIndicatorClass}`).remove();
+      
+      var loadingIndicatorClass = userConfig.loadingIndicatorClass || 'ember-load-indicator';
+      
+      Ember.$(`.${loadingIndicatorClass}`).remove();
     }
   });
-
 }
 
 export default {
