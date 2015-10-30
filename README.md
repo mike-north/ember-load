@@ -12,18 +12,21 @@ A simple loading indicator, while your static assets download, and your Ember.js
 ## Configuration & Use
 
 You can customize this addon in your **environment/config.js**
+
 ```js
 module.exports = function(environment) {
   var ENV = {
+    // optional
     'ember-load': {
+      // This is the default value, if you don't set this opton
       loadingIndicatorClass: 'ember-load-indicator'
     }
     ...
   }
   ...
 }  
-
 ```
+
 And then place some HTML in your **app/index.html**
 
 ```html
