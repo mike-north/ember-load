@@ -4,7 +4,7 @@
 
 [Full Changelog](https://github.com/mike-north/ember-load/compare/v0.0.3...HEAD)
 
-## [v0.0.3](https://github.com/mike-north/ember-load/tree/v0.0.3) (2015-12)
+## [v0.0.3](https://github.com/mike-north/ember-load/tree/v0.0.3) (2015-12-08)
 
 [Full Changelog](https://github.com/mike-north/ember-load/compare/v0.0.2...v0.0.3)
 
