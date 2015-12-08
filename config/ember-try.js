@@ -29,6 +29,18 @@ module.exports = {
       }
     },
     {
+      name: 'ember-2.0',
+      dependencies: {
+        ember: '~2.0.0'
+      }
+    },
+    {
+      name: 'ember-2.1',
+      dependencies: {
+        ember: '~2.1.0'
+      }
+    },
+    {
       name: 'ember-release',
       dependencies: {
         'ember': 'components/ember#release'
