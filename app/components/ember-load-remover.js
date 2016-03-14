@@ -1,0 +1,1 @@
+export { default } from 'ember-load/components/ember-load-remover';

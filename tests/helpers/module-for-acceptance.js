@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import { module } from 'qunit';
 import startApp from '../helpers/start-app';
 import destroyApp from '../helpers/destroy-app';
@@ -5,19 +6,20 @@ import destroyApp from '../helpers/destroy-app';
 export default function(name, options = {}) {
   module(name, {
     beforeEach() {
+      Ember.$('#ember-testing').append(
+        Ember.$('<div class="ember-load-indicator">Loading.....</div>')
+      );
       this.application = startApp();
-
       if (options.beforeEach) {
-        options.beforeEach.apply(this, arguments);
+        options.beforeEach(...arguments);
       }
     },
 
     afterEach() {
-      destroyApp(this.application);
-
       if (options.afterEach) {
-        options.afterEach.apply(this, arguments);
+        options.afterEach(...arguments);
       }
+      destroyApp(this.application);
     }
   });
 }
