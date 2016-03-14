@@ -3,7 +3,7 @@ export function initialize() {
   application.deferReadiness();
   setTimeout(() => {
     application.advanceReadiness();
-  }, 3000);
+  }, 1500);
 }
 
 export default {

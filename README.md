@@ -36,6 +36,12 @@ And then place some HTML in your **app/index.html**
 </div>
 ```
 
+Finally, place the following in your **app/templates/application.hbs**
+
+```hbs
+{{ember-load-remover}}
+```
+
 The loading indicator will be removed when your application view is inserted into the DOM
 
 ### But where do I find cool little spinners?!
