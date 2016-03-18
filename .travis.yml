@@ -1,63 +1,49 @@
----
 language: node_js
 node_js:
-  - "0.12"
-
+- '0.12'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 env:
-  - EMBER_TRY_SCENARIO=ember-1.11
-  - EMBER_TRY_SCENARIO=ember-1.12
-  - EMBER_TRY_SCENARIO=ember-1.13
-  - EMBER_TRY_SCENARIO=ember-2.0
-  - EMBER_TRY_SCENARIO=ember-2.1
-  - EMBER_TRY_SCENARIO=ember-2.2
-  - EMBER_TRY_SCENARIO=ember-2.3
-  - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-beta
-  - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
-
+- EMBER_TRY_SCENARIO=ember-1.11
+- EMBER_TRY_SCENARIO=ember-1.12
+- EMBER_TRY_SCENARIO=ember-1.13
+- EMBER_TRY_SCENARIO=ember-2.0
+- EMBER_TRY_SCENARIO=ember-2.1
+- EMBER_TRY_SCENARIO=ember-2.2
+- EMBER_TRY_SCENARIO=ember-2.3
+- EMBER_TRY_SCENARIO=ember-release
+- EMBER_TRY_SCENARIO=ember-beta
+- ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
 matrix:
   fast_finish: true
   allow_failures:
-    - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
-
+  - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
 before_install:
-  - mkdir travis-phantomjs
-  - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-    -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-  - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
-  - export PATH=$PWD/travis-phantomjs:$PATH
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
-
-
+- mkdir travis-phantomjs
+- wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+  -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+- tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
+- export PATH=$PWD/travis-phantomjs:$PATH
+- npm config set spin false
+- npm install -g npm@^2
 install:
-  - npm install -g bower
-  - npm install
-  - bower install
-
+- npm install -g bower
+- npm install
+- bower install
 script:
-  - ember try $EMBER_TRY_SCENARIO test --skip-cleanup
-
+- ember try $EMBER_TRY_SCENARIO test --skip-cleanup
 after_success:
-# Remove the downloaded copy of phantomJS
 - rm -rf travis-phantomjs
-# Add a remote, authenticating via an OAuth token (encrypted via "travis secure")
-- git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git 2>&1 >/dev/null
-# Download all branches from this new remote (really the same remote, but different auth)
+- git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git
+  2>&1 >/dev/null
 - git fetch deploy
-# Check out a local copy of "master", but don't switch to it yet
 - git branch gh-pages deploy/gh-pages
-# Set up some required git config stuff (more env variables encrypted via "travis secure")
 - git config user.name "Mike North"
 - git config user.email "michael.l.north@gmail.com"
-# Generate the github pages. When this command is finished I'll be on "master" branch with a
-# new commit already made (but not pushed)
-# Push the new commit
-- /bin/bash lib/try-generate-pages.sh
+- "/bin/bash lib/try-generate-pages.sh"
 - git checkout master
+notifications:
+  slack:
+    secure: Mn414dDoB5KsO4OG+vwRvYQtFveMTnnqURi+npWVH9s7rBzDzEuqw8MKED64OMkecKZHaKMRui/ixWrPZt1SFyGnFdeeHo3B97nAbRinWBBO3sfSKY8IXg9ldGVBqOwsRXxCWg+v3MORTWzsG8RkGnxwMx0npu4z1rXoGwgjLCFvmW38wwrXkM9qlyFvYaVsDzr68YbKpe0iR6KV0gDSVNSMoJU98wvaWtstVnI2ry/mFcLet7QC7g3Qo8JOEmnYQx8ckv/GjcONDyt+z+sNE0rMB52FZGZMsepJu/9/SrzviD4702INKIVIMOhWB7jJqA1XPoihA4JbwOgV9hH8zrA9doHMjQQp1Npa1iHoN1LiVn55e2qgcdUcH4R/3QL9gj4E3zk/0y0D6k/TpTi4A8MVqgO3uU9hO5rHxRtGeU3sDL3O2D8JHCZDRyPlybPhfbct8J2mEPbFNN9gLtIHPVXWAhfJRWoQelXofqs78dDSX7lagEcp3ARmAV/YIdbGcKizuogqqE64xg3Q0HmB1RujcVcoRj6sIMkrFo9djOW66mJU3tbVxVvo/Av0Lp/2ISS+7F1PoYjSZTHeF7BX2D3QBX8WwQ7WdbeIdj52NqarysdWVkZa+jh6jexloIAm1UCxPtBbdPS81bLiseY3tS4kWJjwjjKiQRN0gUrNCe8=
