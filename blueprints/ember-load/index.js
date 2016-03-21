@@ -8,7 +8,7 @@ module.exports = {
     var checker = new VersionChecker(this);
     var dep = checker.for('ember', 'bower');
 
-    if (dep.satisfies('>= 2.0')) {
+    if (dep.satisfies('>= 1.13') && dep.satisfies('< 2.3')) {
       return this.addPackageToProject('ember-legacy-views', '~0.2.0');
     }
   }
