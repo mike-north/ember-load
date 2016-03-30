@@ -15,7 +15,6 @@ function scenario(emberVersion) {
 
 module.exports = {
   scenarios: [
-    scenario('1.10'),
     scenario('1.11'),
     scenario('1.12'),
     scenario('1.13'),
