@@ -1,6 +1,6 @@
 {
   "name": "ember-load",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Spinner while your ember.js app loads",
   "directories": {
     "doc": "doc",
