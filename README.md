@@ -60,7 +60,14 @@ Anything that's purely CSS or plain JavaScript should work beautifully. You'll h
 * [cssload.net](http://cssload.net/)
 
 ## Compatibility
-This add-on currently depends on the use of Views.  This means it is compatible with later versions of Ember (1.11.x+) or Ember 2.0 with the installation of [ember-legacy-views](https://github.com/emberjs/ember-legacy-views).
+This add-on can be used with or without `Ember.View`s
+
+| Ember Version Range | Notes |
+|---------------------|-------|
+| >= 1.11 | Can be used with Ember.View, or using the component (`{{ember-load-remover}}`) |
+| 2.0 - 2.4 |  Can be used with Ember.View (via [ember-legacy-views](https://github.com/emberjs/ember-legacy-views)), or using the component (`{{ember-load-remover}}`) |
+| >= 2.5 | Must be used via component (`{{ember-load-remover}}`), as ember-legacy-views is not compatible with Ember 2.5 |
+
 
 ## Contributing
 
