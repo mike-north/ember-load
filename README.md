@@ -9,6 +9,10 @@ A simple loading indicator, while your static assets download, and your Ember.js
 [![Dependency Status](https://david-dm.org/mike-north/ember-load.svg)](https://david-dm.org/mike-north/ember-load)
 [![devDependency Status](https://david-dm.org/mike-north/ember-load/dev-status.svg)](https://david-dm.org/mike-north/ember-load#info=devDependencies)
 
+## Installing the Add-on
+
+* `ember install ember-load`
+
 ## Configuration & Use
 
 You can customize this addon in your **environment/config.js**
@@ -58,8 +62,7 @@ Anything that's purely CSS or plain JavaScript should work beautifully. You'll h
 ## Compatibility
 This add-on currently depends on the use of Views.  This means it is compatible with later versions of Ember (1.11.x+) or Ember 2.0 with the installation of [ember-legacy-views](https://github.com/emberjs/ember-legacy-views).
 
-
-## Installation
+## Contributing
 
 * `git clone` this repository
 * `npm install`
