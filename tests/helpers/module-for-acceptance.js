@@ -3,11 +3,15 @@ import { module } from 'qunit';
 import startApp from '../helpers/start-app';
 import destroyApp from '../helpers/destroy-app';
 
+// jscs:disable disallowDirectPropertyAccess
+const jq = Ember.$;
+// jscs:enable disallowDirectPropertyAccess
+
 export default function(name, options = {}) {
   module(name, {
     beforeEach() {
-      Ember.$('#ember-testing').append(
-        Ember.$('<div class="ember-load-indicator">Loading.....</div>')
+      jq('#ember-testing').append(
+        jq('<div class="ember-load-indicator">Loading.....</div>')
       );
       this.application = startApp();
       if (options.beforeEach) {
