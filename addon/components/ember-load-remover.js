@@ -8,7 +8,18 @@ export default Component.extend({
   'ember-load-config': inject.service(),
   didInsertElement() {
     this._super(...arguments);
-    const loadingIndicatorClass = this.get('ember-load-config.loadingIndicatorClass') || 'ember-load-indicator';
+    this.removeLoadingIndicator();
+  },
+  /**
+   * remove the loading indicator. By default this
+   * removes the first element with the '.ember-load-indicator'
+   * found CSS class from the DOM
+   * @public
+   */
+  removeLoadingIndicator() {
+    let loadingIndicatorClass =
+      this.get('ember-load-config.loadingIndicatorClass') ||
+      'ember-load-indicator';
     $(`.${loadingIndicatorClass}`).remove();
   }
 });
