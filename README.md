@@ -59,6 +59,26 @@ Anything that's purely CSS or plain JavaScript should work beautifully. You'll h
 * [Tim Holman's Loaders and Spinners Collection](http://codepen.io/collection/HtAne/)
 * [cssload.net](http://cssload.net/)
 
+
+### Advanced Usage
+
+You may also override or extend the default "load indicator removal" hook, by creating a component in your app called `ember-load-remover`
+
+###### app/components/ember-load-remover.js
+```js
+import EmberLoadRemover from 'ember-load/components/ember-load-remover';
+
+export default EmberLoadRemover.extend({
+  removeLoadingIndicator() {
+    // Perform default behavior
+    this._super(...arguments);
+    // Do something custom in addition to it
+    console.log('Just so you know, your app has loaded. 🚀');
+  }
+});
+
+```
+
 ## Compatibility
 This add-on can be used with or without `Ember.View`s
 
