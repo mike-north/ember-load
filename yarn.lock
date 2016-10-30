@@ -652,9 +652,9 @@ broccoli-jscs@^2.0.0:
     json-stable-stringify "^1.0.0"
     minimatch "^3.0.0"
 
-broccoli-jshint@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/broccoli-jshint/-/broccoli-jshint-1.2.0.tgz#8cd565d11a04bfd32cb8f85a0f7ede1e5be7a6a2"
+broccoli-jshint@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/broccoli-jshint/-/broccoli-jshint-2.1.0.tgz#d9aeb6428e7657d0bebf4e7920e55f82840601e6"
   dependencies:
     broccoli-persistent-filter "^1.2.0"
     chalk "~0.4.0"
@@ -1436,11 +1436,11 @@ ember-cli-is-package-missing@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-is-package-missing/-/ember-cli-is-package-missing-1.0.0.tgz#6e6184cafb92635dd93ca6c946b104292d4e3390"
 
-ember-cli-jshint@^1.0.4:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/ember-cli-jshint/-/ember-cli-jshint-1.0.5.tgz#8a0185f19cbd7136995ee6ac92941a560e265b91"
+ember-cli-jshint@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-jshint/-/ember-cli-jshint-2.0.1.tgz#001c0e934605917b91cded6949b58485b38af17d"
   dependencies:
-    broccoli-jshint "^1.0.0"
+    broccoli-jshint "^2.1.0"
 
 ember-cli-legacy-blueprints@^0.1.1:
   version "0.1.2"
