@@ -14,6 +14,9 @@ export default function startApp(attrs) {
     application = Application.create(attributes);
     application.setupForTesting();
     application.injectTestHelpers();
+    $(application.rootElement).append($(`
+<div class="ember-load-indicator">Loading...</div>
+`));
   });
 
   return application;
