@@ -1,46 +1,45 @@
+---
 language: node_js
+
 node_js:
-- '0.12'
+  - "6"
+
 sudo: false
+
 cache:
-  directories:
-  - node_modules
+  yarn: true
+
 env:
-- EMBER_TRY_SCENARIO=ember-1.11
-- EMBER_TRY_SCENARIO=ember-1.12
-- EMBER_TRY_SCENARIO=ember-1.13
-- EMBER_TRY_SCENARIO=ember-2.0
-- EMBER_TRY_SCENARIO=ember-2.1
-- EMBER_TRY_SCENARIO=ember-2.2
-- EMBER_TRY_SCENARIO=ember-2.3
-- EMBER_TRY_SCENARIO=ember-release
-- ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
-- ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
+  - EMBER_TRY_SCENARIO=ember-lts-2.4
+  - EMBER_TRY_SCENARIO=ember-lts-2.8
+  - EMBER_TRY_SCENARIO=ember-release
+  - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-beta
+  - ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
+
 matrix:
   fast_finish: true
   allow_failures:
     - env: ALLOW_DEPRECATIONS=true EMBER_TRY_SCENARIO=ember-canary
+
 before_install:
-- mkdir travis-phantomjs
-- wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-  -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-- tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
-- export PATH=$PWD/travis-phantomjs:$PATH
-- npm config set spin false
-- npm install -g npm@^2
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - yarn global add phantomjs-prebuilt
+  - phantomjs --version
+
 install:
-- npm install -g bower
-- npm install
-- bower install
+  - yarn install --no-lockfile
+
 script:
-- ember try $EMBER_TRY_SCENARIO test --skip-cleanup
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
 after_success:
-- rm -rf travis-phantomjs
-- git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git
+  - rm -rf travis-phantomjs
+  - git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git
   2>&1 >/dev/null
-- git fetch deploy
-- git branch gh-pages deploy/gh-pages
-- git config user.name "Mike North"
-- git config user.email "michael.l.north@gmail.com"
-- "/bin/bash lib/try-generate-pages.sh"
-- git checkout master
+  - git fetch deploy
+  - git branch gh-pages deploy/gh-pages
+  - git config user.name "Mike North"
+  - git config user.email "michael.l.north@gmail.com"
+  - "/bin/bash lib/try-generate-pages.sh"
+  - git checkout master
