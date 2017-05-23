@@ -17,9 +17,7 @@ export default Component.extend({
    * @public
    */
   removeLoadingIndicator() {
-    let loadingIndicatorClass =
-      this.get('ember-load-config.loadingIndicatorClass') ||
-      'ember-load-indicator';
+    let loadingIndicatorClass = this.get('ember-load-config.loadingIndicatorClass') || 'ember-load-indicator';
     $(`.${loadingIndicatorClass}`).remove();
   }
 });

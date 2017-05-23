@@ -1,5 +1,7 @@
 # Ember-load
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-load.svg)](https://greenkeeper.io/)
+
 A simple loading indicator, while your static assets download, and your Ember.js app starts up.
 
 [![Build Status](https://travis-ci.org/mike-north/ember-load.svg?branch=master)](https://travis-ci.org/mike-north/ember-load)

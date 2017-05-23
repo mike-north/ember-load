@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 
 module.exports = function(environment) {
   var ENV = {
@@ -6,9 +6,6 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    contentSecurityPolicy: {
-      'style-src': '\'unsafe-inline\' localhost:4200'
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -35,7 +32,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-    ENV.EmberENV.RAISE_ON_DEPRECATION = !process.env['ALLOW_DEPRECATIONS'];
     // Testem prefers this...
     ENV.locationType = 'none';
 
@@ -47,8 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
-    ENV.rootURL = '/ember-load';
+
   }
 
   return ENV;

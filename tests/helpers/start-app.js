@@ -2,22 +2,18 @@ import Ember from 'ember';
 import Application from '../../app';
 import config from '../../config/environment';
 
-const { merge, run } = Ember;
+const { merge, run, $ } = Ember;
 
 export default function startApp(attrs) {
-  let application;
-
   let attributes = merge({}, config.APP);
   attributes = merge(attributes, attrs); // use defaults, but you can override;
 
-  run(() => {
-    application = Application.create(attributes);
+  return run(() => {
+    let application = Application.create(attributes);
     application.setupForTesting();
     application.injectTestHelpers();
     $(application.rootElement).append($(`
-<div class="ember-load-indicator">Loading...</div>
-`));
+<div class="ember-load-indicator">Loading...</div>`));
+    return application;
   });
-
-  return application;
 }
