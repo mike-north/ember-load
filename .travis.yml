@@ -40,8 +40,7 @@ script:
 
 after_success:
   - rm -rf travis-phantomjs
-  - git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git
-  2>&1 >/dev/null
+  - git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/mike-north/ember-load.git 2>&1 >/dev/null
   - git fetch deploy
   - git branch gh-pages deploy/gh-pages
   - git config user.name "Mike North"
