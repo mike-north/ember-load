@@ -56,7 +56,6 @@ Anything that's purely CSS or plain JavaScript should work beautifully. You'll h
 
 * [Spinkit](http://tobiasahlin.com/spinkit/)
 * [Single Element CSS Loaders](http://projects.lukehaas.me/css-loaders/)
-* [css-spinners.com](http://www.css-spinners.com/)
 * [CSS-only loaders](http://blog.pexels.com/css-only-loaders/)
 * [Tim Holman's Loaders and Spinners Collection](http://codepen.io/collection/HtAne/)
 * [cssload.net](http://cssload.net/)
