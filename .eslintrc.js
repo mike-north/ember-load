@@ -12,5 +12,8 @@ module.exports = {
     browser: true
   },
   rules: {
+    'ember-suave/no-direct-property-access': 'off',
+    'no-extra-boolean-cast': 0,
+    'no-useless-escape': 0
   }
 };

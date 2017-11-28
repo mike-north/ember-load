@@ -1,11 +1,11 @@
-import Ember from 'ember';
+import { inject as service } from '@ember/service';
+import Component from '@ember/component';
+import $ from 'jquery';
 import layout from '../templates/components/ember-load-remover';
-
-const { inject, Component, $ } = Ember;
 
 export default Component.extend({
   layout,
-  'ember-load-config': inject.service(),
+  'ember-load-config': service(),
   didInsertElement() {
     this._super(...arguments);
     this.removeLoadingIndicator();
