@@ -1,9 +1,7 @@
-import Ember from 'ember';
+import $ from 'jquery';
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-// jshint -W079
-const { $ } = Ember;
 // jshint +W079
 moduleForComponent('ember-load-remover', 'Integration | Component | ember load remover', {
   integration: true,

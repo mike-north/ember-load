@@ -1,14 +1,12 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
-const { Router } = Ember;
-
-const MyRouter = Router.extend({
+const Router = EmberRouter.extend({
   location: config.locationType,
   rootURL: config.rootURL
 });
 
-MyRouter.map(function() {
+Router.map(function() {
 });
 
-export default MyRouter;
+export default Router;
