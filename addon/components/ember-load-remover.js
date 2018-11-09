@@ -1,6 +1,5 @@
 import { inject as service } from '@ember/service';
 import Component from '@ember/component';
-import $ from 'jquery';
 import layout from '../templates/components/ember-load-remover';
 
 export default Component.extend({
@@ -17,7 +16,10 @@ export default Component.extend({
    * @public
    */
   removeLoadingIndicator() {
-    let loadingIndicatorClass = this.get('ember-load-config.loadingIndicatorClass') || 'ember-load-indicator';
-    $(`.${loadingIndicatorClass}`).remove();
+    let loadingIndicatorClass =
+      this.get('ember-load-config.loadingIndicatorClass') ||
+      'ember-load-indicator';
+    const elems = document.querySelectorAll(`.${loadingIndicatorClass}`);
+    elems.forEach(e => e.remove());
   }
 });

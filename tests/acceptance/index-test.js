@@ -1,19 +1,28 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { visit, currentURL, findAll } from '@ember/test-helpers';
+import { setupApplicationTest } from 'ember-qunit';
 
-moduleForAcceptance('Acceptance | index');
+module('Acceptance | index', function(hooks) {
+  setupApplicationTest(hooks);
+  hooks.beforeEach(() => {
+    const loadIndicator = document.createElement('div');
+    loadIndicator.classList.add('ember-load-indicator');
+    document.querySelector('#ember-testing').appendChild(loadIndicator);
+  });
 
-test('visiting /', function(assert) {
-  assert.expect(3);
-  let done = assert.async();
+  test('visiting /index', async function(assert) {
+    assert.equal(
+      findAll('.ember-load-indicator').length,
+      1,
+      'Load indicator is initially present'
+    );
+    await visit('/');
 
-  setTimeout(() => {
-    visit('/');
-    assert.equal(find('.ember-load-indicator').length, 1, 'Load indicator is initially present');
-    andThen(function() {
-      assert.equal(find('.ember-load-indicator').length, 0, 'Load indicator is no longer present');
-      assert.equal(currentURL(), '/');
-      done();
-    });
-  }, 1600);
+    assert.equal(
+      findAll('.ember-load-indicator').length,
+      0,
+      'Load indicator is no longer present'
+    );
+    assert.equal(currentURL(), '/');
+  });
 });

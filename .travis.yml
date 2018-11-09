@@ -1,8 +1,9 @@
+---
 language: node_js
 node_js:
   # we recommend testing addons with the same minimum supported node version as Ember CLI
   # so that your addon works for all apps
-  - '8'
+  - "6"
 
 sudo: false
 dist: trusty
@@ -26,16 +27,22 @@ jobs:
   include:
     # runs linting and tests with current locked deps
 
-    - stage: 'Tests'
-      name: 'Tests'
+    - stage: "Tests"
+      name: "Tests"
+      install:
+        - yarn install --non-interactive
       script:
-        - npm run lint:hbs
-        - npm run lint:js
-        - npm test
+        - yarn lint:hbs
+        - yarn lint:js
+        - yarn test
+
+    - name: "Floating Dependencies"
+      script:
+        - yarn test
 
     # we recommend new addons test the current and previous LTS
     # as well as latest stable release (bonus points to beta/canary)
-    - stage: 'Additional Tests'
+    - stage: "Additional Tests"
       env: EMBER_TRY_SCENARIO=ember-lts-2.16
     - env: EMBER_TRY_SCENARIO=ember-lts-2.18
     - env: EMBER_TRY_SCENARIO=ember-release
@@ -51,4 +58,4 @@ install:
   - yarn install --no-lockfile --non-interactive
 
 script:
-  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO && yarn travis-deploy-once "yarn semantic-release"
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO

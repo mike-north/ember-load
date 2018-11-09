@@ -1,9 +1,7 @@
 import hideLoadingScreenInstanceInitializer from '../instance-initializers/hide-loading-screen';
-import Ember from 'ember';
+import { VERSION } from '@ember/version';
 
-const { VERSION } = Ember;
-
-const EMBER_VERSION_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:(?:\-(alpha|beta)\.([0-9]+)(?:\.([0-9]+))?)?)?(?:\+(canary))?(?:\.([0-9abcdef]+))?(?:\-([A-Za-z0-9\.\-]+))?(?:\+([A-Za-z0-9\.\-]+))?$/;
+const EMBER_VERSION_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:(?:-(alpha|beta)\.([0-9]+)(?:\.([0-9]+))?)?)?(?:\+(canary))?(?:\.([0-9abcdef]+))?(?:-([A-Za-z0-9.-]+))?(?:\+([A-Za-z0-9.-]+))?$/;
 
 /**
  * VERSION_INFO[i] is as follows:
@@ -21,7 +19,8 @@ const EMBER_VERSION_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:(?:\-(alpha|beta)\.
  * @private
  */
 const VERSION_INFO = EMBER_VERSION_REGEX.exec(VERSION);
-const isPre111 = parseInt(VERSION_INFO[1], 10) < 2 && parseInt(VERSION_INFO[2], 10) < 12;
+const isPre111 =
+  parseInt(VERSION_INFO[1], 10) < 2 && parseInt(VERSION_INFO[2], 10) < 12;
 
 export function initialize() {
   if (isPre111) {
