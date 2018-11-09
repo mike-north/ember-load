@@ -1,7 +1,9 @@
+import { later } from '@ember/runloop';
+
 export function initialize() {
   let application = arguments[1] || arguments[0];
   application.deferReadiness();
-  setTimeout(() => {
+  later(() => {
     application.advanceReadiness();
   }, 1500);
 }
