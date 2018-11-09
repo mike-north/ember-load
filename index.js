@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-load'
+  name: require('./package').name
 };
