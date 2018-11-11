@@ -1,3 +1,14 @@
+## [0.0.13](https://github.com/mike-north/ember-load/compare/v0.0.12...v0.0.13) (2018-11-11)
+
+
+### Bug Fixes
+
+* add missing dependencies ([6e0b89c](https://github.com/mike-north/ember-load/commit/6e0b89c))
+* remove bower ([c2b417a](https://github.com/mike-north/ember-load/commit/c2b417a))
+* shared semantic-release and renovate config ([7f7a444](https://github.com/mike-north/ember-load/commit/7f7a444))
+* shared semantic-release and renovate config ([6221d8b](https://github.com/mike-north/ember-load/commit/6221d8b))
+* upgrade ember-cli ([7626105](https://github.com/mike-north/ember-load/commit/7626105))
+
 # Change Log
 
 ## [Unreleased](https://github.com/mike-north/ember-load/tree/HEAD)
