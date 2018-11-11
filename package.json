@@ -78,7 +78,7 @@
     "extends": "@mike-north/js-lib-semantic-release-config"
   },
   "optionalDependencies": {
-    "@mike-north/js-lib-semantic-release-config": "^0.0.0-development",
+    "@mike-north/js-lib-semantic-release-config": "^1.0.0",
     "semantic-release": "^15.10.8",
     "travis-deploy-once": "^5.0.9"
   }
