@@ -24,7 +24,7 @@ module.exports = function(environment) {
   var ENV = {
     // optional
     'ember-load': {
-      // This is the default value, if you don't set this opton
+      // This is the default value, if you don't set this option
       loadingIndicatorClass: 'ember-load-indicator'
     }
     ...
