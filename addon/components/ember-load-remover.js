@@ -11,7 +11,7 @@ export default Component.extend({
   },
   /**
    * remove the loading indicator. By default this
-   * removes the first element with the '.ember-load-indicator'
+   * removes all elements with the '.ember-load-indicator'
    * found CSS class from the DOM
    * @public
    */
