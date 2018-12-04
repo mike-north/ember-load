@@ -5,12 +5,17 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: ['ember'],
+  plugins: ['ember', 'ie11'],
   extends: ['eslint:recommended', 'plugin:ember/recommended'],
   env: {
     browser: true
   },
-  rules: {},
+  rules: {
+    'ie11/no-collection-args': ['error'],
+    'ie11/no-for-in-const': ['error'],
+    'ie11/no-loop-func': ['warn'],
+    'ie11/no-weak-collections': ['error']
+  },
   overrides: [
     // node files
     {
