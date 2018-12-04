@@ -8,7 +8,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "semantic-release": "semantic-release"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
@@ -46,7 +47,6 @@
     "husky": "1.2.0",
     "loader.js": "4.7.0",
     "semantic-release": "15.12.3",
-    "travis-deploy-once": "5.0.9",
     "qunit-dom": "0.8.1"
   },
   "keywords": [
