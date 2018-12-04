@@ -1,3 +1,10 @@
+## [0.0.14](https://github.com/mike-north/ember-load/compare/v0.0.13...v0.0.14) (2018-11-27)
+
+
+### Bug Fixes
+
+* optionalDependencies -> devDependencies ([db7dfa1](https://github.com/mike-north/ember-load/commit/db7dfa1))
+
 ## [0.0.13](https://github.com/mike-north/ember-load/compare/v0.0.12...v0.0.13) (2018-11-11)
 
 
