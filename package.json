@@ -43,7 +43,7 @@
     "ember-source-channel-url": "1.1.0",
     "ember-try": "1.1.0",
     "eslint-plugin-ember": "5.4.0",
-    "eslint-plugin-ie11": "^1.0.0",
+    "eslint-plugin-ie11": "1.0.0",
     "eslint-plugin-node": "8.0.0",
     "husky": "1.2.0",
     "loader.js": "4.7.0",
