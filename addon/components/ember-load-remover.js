@@ -20,6 +20,8 @@ export default Component.extend({
       this.get('ember-load-config.loadingIndicatorClass') ||
       'ember-load-indicator';
     const elems = document.querySelectorAll(`.${loadingIndicatorClass}`);
-    elems.forEach(e => e.remove());
+    for (let i = 0; i < elems.length; i++) {
+      elems[i].remove();
+    }
   }
 });
