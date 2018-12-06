@@ -1,3 +1,10 @@
+## [0.0.15](https://github.com/mike-north/ember-load/compare/v0.0.14...v0.0.15) (2018-12-06)
+
+
+### Bug Fixes
+
+* force release of ie11 fixes ([ce59f47](https://github.com/mike-north/ember-load/commit/ce59f47))
+
 ## [0.0.14](https://github.com/mike-north/ember-load/compare/v0.0.13...v0.0.14) (2018-11-27)
 
 
