@@ -74,7 +74,6 @@ export default EmberLoadRemover.extend({
     console.log('Just so you know, your app has loaded. 🚀');
   }
 });
-
 ```
 
 ## Compatibility
