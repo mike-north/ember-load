@@ -39,7 +39,7 @@
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-qunit": "4.1.2",
     "ember-resolver": "5.0.1",
-    "ember-source": "3.5.1",
+    "ember-source": "3.6.0",
     "ember-source-channel-url": "1.1.0",
     "ember-try": "1.1.0",
     "eslint-plugin-ember": "5.4.0",
@@ -47,7 +47,7 @@
     "eslint-plugin-node": "8.0.0",
     "husky": "1.2.0",
     "loader.js": "4.7.0",
-    "qunit-dom": "0.8.1",
+    "qunit-dom": "0.8.2",
     "semantic-release": "15.12.3"
   },
   "keywords": [
