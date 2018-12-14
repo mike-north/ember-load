@@ -2,13 +2,9 @@ module.exports = {
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
 
-  launch_in_ci: [
-    'Chrome'
-  ],
+  launch_in_ci: ['Chrome'],
 
-  launch_in_dev: [
-    'Chrome'
-  ],
+  launch_in_dev: ['Chrome'],
 
   browser_args: {
     Chrome: {
@@ -23,23 +19,6 @@ module.exports = {
         '--remote-debugging-port=0',
         '--window-size=1440,900'
       ].filter(Boolean)
-    }
-  },
-
-  launchers: {
-    SL_Internet_Explorer_11_public: {
-      "exe": "ember",
-      "args": [
-        "sauce:launch",
-        "-b",
-        "Internet Explorer 11",
-        "--visibility",
-        "public",
-        "--attach",
-        "--no-connect",
-        "--url"
-      ],
-      "protocol": "browser"
     }
   }
 };

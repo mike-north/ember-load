@@ -12,7 +12,9 @@ module.exports = {
       args: [
         'sauce:launch',
         '-b',
-        'Internet Explorer 11',
+        'internet explorer',
+        '-v',
+        '11',
         '--visibility',
         'public',
         '--attach',
