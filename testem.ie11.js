@@ -11,6 +11,7 @@ module.exports = {
       exe: 'ember',
       args: [
         'sauce:launch',
+        '---',
         '-b',
         'internet explorer',
         '--visibility',
