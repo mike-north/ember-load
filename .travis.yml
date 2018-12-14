@@ -32,6 +32,15 @@ jobs:
 
   include:
     # runs linting and tests with current locked deps
+    - stage: 'wip'
+      name: 'Internet Explorer 11'
+      before_script:
+        - rm testem.js
+        - cp testem.ie11.js testem.js
+        - ember sauce:connect
+      script: ember test --test-port 7000
+      after_script:
+        - ember sauce:disconnect
 
     - stage: 'Tests'
       name: 'Tests'
