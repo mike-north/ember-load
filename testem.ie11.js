@@ -13,8 +13,6 @@ module.exports = {
         'sauce:launch',
         '-b',
         'internet explorer',
-        '-v',
-        '11',
         '--visibility',
         'public',
         '--attach',
