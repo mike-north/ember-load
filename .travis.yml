@@ -9,6 +9,7 @@ dist: trusty
 
 addons:
   chrome: stable
+  sauce_connect: true
 
 cache:
   yarn: true
