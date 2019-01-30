@@ -1,3 +1,10 @@
+## [0.0.17](https://github.com/mike-north/ember-load/compare/v0.0.16...v0.0.17) (2019-01-30)
+
+
+### Bug Fixes
+
+* **deps:** ember-cli-version-checker ([bfbf179](https://github.com/mike-north/ember-load/commit/bfbf179))
+
 ## [0.0.16](https://github.com/mike-north/ember-load/compare/v0.0.15...v0.0.16) (2018-12-14)
 
 
