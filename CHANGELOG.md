@@ -1,3 +1,17 @@
+## [0.0.17](https://github.com/mike-north/ember-load/compare/v0.0.16...v0.0.17) (2019-01-30)
+
+
+### Bug Fixes
+
+* **deps:** ember-cli-version-checker ([bfbf179](https://github.com/mike-north/ember-load/commit/bfbf179))
+
+## [0.0.16](https://github.com/mike-north/ember-load/compare/v0.0.15...v0.0.16) (2018-12-14)
+
+
+### Bug Fixes
+
+* ie11-friendly way of removing the loading indicator ([7cf8bd9](https://github.com/mike-north/ember-load/commit/7cf8bd9)), closes [#134](https://github.com/mike-north/ember-load/issues/134)
+
 ## [0.0.15](https://github.com/mike-north/ember-load/compare/v0.0.14...v0.0.15) (2018-12-06)
 
 
