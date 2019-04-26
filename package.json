@@ -47,7 +47,7 @@
     "eslint-plugin-node": "8.0.1",
     "husky": "1.2.1",
     "loader.js": "4.7.0",
-    "qunit-dom": "0.8.4",
+    "qunit-dom": "0.8.5",
     "semantic-release": "15.12.5"
   },
   "keywords": [
