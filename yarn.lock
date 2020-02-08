@@ -4225,6 +4225,15 @@ ember-cli-version-checker@^3.0.0, ember-cli-version-checker@^3.0.1, ember-cli-ve
     resolve-package-path "^1.2.6"
     semver "^5.6.0"
 
+ember-cli-version-checker@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-4.1.0.tgz#7fc9836bdbc87451d286ba6a9a89b23591d8bbb7"
+  integrity sha512-yLf2YqotTSsjiXwx9Dt6H7AU0QcldFn5SLk/pG3Zqb0aHNeanBOPlx4/Ysa46ILGWYIh0fDH34AEVRueXTrQBQ==
+  dependencies:
+    resolve-package-path "^2.0.0"
+    semver "^6.3.0"
+    silent-error "^1.1.1"
+
 ember-cli@3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.10.1.tgz#068b63bab00ec8a229097d45b809ccc5e1a9dd53"
@@ -10326,6 +10335,14 @@ resolve-package-path@^1.0.11, resolve-package-path@^1.2.6:
     path-root "^0.1.1"
     resolve "^1.10.0"
 
+resolve-package-path@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-2.0.0.tgz#7f258ab86ff074fff4ff8027a28f94d17d6fb1df"
+  integrity sha512-/CLuzodHO2wyyHTzls5Qr+EFeG6RcW4u6//gjYvUfcfyuplIX1SSccU+A5A9A78Gmezkl3NBkFAMxLbzTY9TJA==
+  dependencies:
+    path-root "^0.1.1"
+    resolve "^1.13.1"
+
 resolve-path@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/resolve-path/-/resolve-path-1.4.0.tgz#c4bda9f5efb2fce65247873ab36bb4d834fe16f7"
@@ -10350,6 +10367,13 @@ resolve@^1.1.3, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.3.2, resolve@^1.3.3
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.11.1.tgz#ea10d8110376982fef578df8fc30b9ac30a07a3e"
   integrity sha512-vIpgF6wfuJOZI7KKKSP+HmiKggadPQAdsp5HiC1mvqnfp0gF1vdwgBWZIdrVft9pgqoMFQN+R7BSWZiBxx+BBw==
+  dependencies:
+    path-parse "^1.0.6"
+
+resolve@^1.13.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
+  integrity sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
   dependencies:
     path-parse "^1.0.6"
 
@@ -10578,7 +10602,7 @@ semver-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
 
-semver@6.3.0:
+semver@6.3.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
