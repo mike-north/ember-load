@@ -6004,10 +6004,10 @@ ember-cli-version-checker@^5.1.1:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@3.25.0:
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.25.0.tgz#061c5f263e959a2c0c255adbfc38c0fbbb7941b5"
-  integrity sha512-l8fOqxaBTCVU5IeSzEBBGl7oGCvt7KGVJTMA5uR8nNM1Eaeip8RKWskJvzSXtchwGY7ikR71vm2XOiGrzt/6pw==
+ember-cli@3.25.1:
+  version "3.25.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.25.1.tgz#d4f2529fc8447e1331b09bf4c4abc79075895f9d"
+  integrity sha512-LSLFZivV4LASFtw+4FeTy7t/tPrtO245FbHkDpWklJNov4jdCnV9ub38SWrWgi+WSRV+v3LRqROITxey1cEHqw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-modules-amd" "^7.12.1"
@@ -6136,10 +6136,10 @@ ember-maybe-import-regenerator@0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.2.tgz#72ce175f5d1c96a40fe810928c4d4a822a2e2c60"
-  integrity sha512-mrnFaUhAJWkJWeRZKajLuuRmKsifRrhAla1sQAfIiuh7OCVY1eqFvSUFzLR7/WgdNwPrUzEOOx39MdVRZBd/7A==
+ember-qunit@5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.3.tgz#73de924c6c698eaed4adaaab257793741f2d666f"
+  integrity sha512-vz56bX/ciBZPNXl1l3jDNo9O0YBdVXtt3kqXpmEurNAlggmhdAJyAFTVZaWLtZYIfLuSdlHEMPwOzYmjqhd7fQ==
   dependencies:
     broccoli-funnel "^3.0.3"
     broccoli-merge-trees "^3.0.2"
