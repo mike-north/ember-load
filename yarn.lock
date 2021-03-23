@@ -1226,10 +1226,10 @@
     "@glimmer/env" "0.1.7"
     "@simple-dom/interface" "^1.4.0"
 
-"@glimmer/vm-babel-plugins@0.77.1":
-  version "0.77.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/vm-babel-plugins/-/vm-babel-plugins-0.77.1.tgz#80c8b5476ccff68191bc42ebb29928a9b8d22d69"
-  integrity sha512-amkBPV3H/3OhYIeXo03sU1VzqmUl8TUxHhjfVJwRy+vQV22S5saZCiUCyOYUsUkxdEG5sU8qooooBY8VomkkBg==
+"@glimmer/vm-babel-plugins@0.77.3":
+  version "0.77.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/vm-babel-plugins/-/vm-babel-plugins-0.77.3.tgz#0671fa09828ba0e2c204e4ca2586651928c32ace"
+  integrity sha512-m1RUfiTlxPSRGML1QkRl5VSjkLHIaFPjeRaz3NzT+B3mjTlEjusCm9q9fQS6doQRGgz4Rwl3vXi9hZHmMJal+Q==
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
@@ -5902,16 +5902,16 @@ ember-source-channel-url@^3.0.0:
   dependencies:
     node-fetch "^2.6.0"
 
-ember-source@3.25.3:
-  version "3.25.3"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.25.3.tgz#a64278a2dcc36b03056589e1b7393f4558c42d70"
-  integrity sha512-3HgfvYJfvcALNJSsPvbN0qn9ykI7Px7mPyCidXJRdm+tdPB0DKFW3nqT+4W+7YysWYGsj6yS81NhksnXEw4Naw==
+ember-source@3.26.0:
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.26.0.tgz#9e66af77d0424d94c22ad18ce4f6c7eb80a4650a"
+  integrity sha512-Ls+QM2/d915bzt2Hj2ni+Ds+wwDoj8yGRV7PJmEtVya/fBSwBw4sr/vekUPjDaXS5WbbnmAURK5krsVja+bBSw==
   dependencies:
     "@babel/helper-module-imports" "^7.8.3"
     "@babel/plugin-transform-block-scoping" "^7.8.3"
     "@babel/plugin-transform-object-assign" "^7.8.3"
     "@ember/edition-utils" "^1.2.0"
-    "@glimmer/vm-babel-plugins" "0.77.1"
+    "@glimmer/vm-babel-plugins" "0.77.3"
     babel-plugin-debug-macros "^0.3.3"
     babel-plugin-filter-imports "^4.0.0"
     broccoli-concat "^4.2.4"
@@ -5928,9 +5928,9 @@ ember-source@3.25.3:
     ember-cli-version-checker "^5.1.1"
     ember-router-generator "^2.0.0"
     inflection "^1.12.0"
-    jquery "^3.5.0"
+    jquery "^3.5.1"
     resolve "^1.17.0"
-    semver "^6.1.1"
+    semver "^7.3.4"
     silent-error "^1.1.1"
 
 ember-template-lint@^1.1.0:
@@ -6232,10 +6232,10 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-ember@10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.2.0.tgz#449c3ce8e5421c61ab47e0cb6954e2f6f1cfbdc8"
-  integrity sha512-W5cPJa+bBcKJ5kmmu7o8r1hbbT45ZCy8eE5EyRjqJ02B7Jlg74mX+Hdz4RYNSvV1+G7YAOwEZLUkIdJ+44ySGA==
+eslint-plugin-ember@10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.3.0.tgz#2e53ad334dc7f7f66f6cba890b9c01a64817d1c1"
+  integrity sha512-qmUQ6OYs8trr+4h3DPJz76fBgXBJEragLCD4RHV4bcnKd4vtgmJvFTF+UDlIsiZZVd03r5aYzpuQvVa+oH6JXg==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^1.0.0-alpha.39"
@@ -8825,7 +8825,7 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
-jquery@^3.5.0:
+jquery@^3.5.1:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
