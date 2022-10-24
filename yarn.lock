@@ -14312,9 +14312,9 @@ workerpool@^5.0.1:
   integrity sha512-Sywova24Ow2NQ24JPB68bI89EdqMDjUXo4OpofK/QMD7C2ZVMloYBgQ5J3PChcBJHj2vspsmGx1/3nBKXtUkXQ==
 
 workerpool@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/workerpool/-/workerpool-6.2.1.tgz#46fc150c17d826b86a008e5a4508656777e9c343"
-  integrity sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/workerpool/-/workerpool-6.3.0.tgz#82f5e5e1fb01d48f0399fe52a117c8a15cd1b972"
+  integrity sha512-2rVusseHGwxEEESx/szO2SHfi982WQavL2YlWGHsZE2ynZ4gaHT7kmCXph9k9fUivKOwx7PBn6vn4nXUxxdKcw==
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
