@@ -6050,19 +6050,19 @@ ember-maybe-import-regenerator@0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-8.0.1.tgz#55422d87b53678d079840e75fbe09614114acde6"
-  integrity sha512-13PtywHNPTQKkDW4o8QRkJvcdsZr8hRyvh6xh/YLAX8+HaRLd3nPL8mBF4O/Kur/DAj3QWLvjzktZ2uRNGSh3A==
+ember-qunit@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-8.0.2.tgz#a6346136cba785853f176dfa6ed25e3f0a11b7a0"
+  integrity sha512-Rf60jeUTWNsF3Imf/FLujW/B/DFmKVXKmXO1lirTXjpertKfwRhp/3MnN8a/U/WyodTIsERkInGT1IqTtphCdQ==
   dependencies:
     "@embroider/addon-shim" "^1.8.6"
     "@embroider/macros" "^1.13.1"
     ember-cli-test-loader "^3.1.0"
 
-ember-resolver@13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-13.0.0.tgz#2631d64eeda47869607e40cfbbbe46bddfc03826"
-  integrity sha512-CHt3RdHsjHnVA6wJY9Rw3n73RNfG7JBoqPAhlt4AD+leQPdY8QDKroWd9u5IM+YhCje46jhxEJAtQ733pFiS5Q==
+ember-resolver@13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-13.0.1.tgz#62b0e284079ea55d7918a29a53fcfa0507137151"
+  integrity sha512-+F0lX8P9pBwE1hf8PMhe7ftT3f9PQSQwIXPN1qc9Aiij5V/GDVTdd+j4+CSj6tCHlf6ylADGxs4c6mofs/sDvQ==
   dependencies:
     ember-cli-babel "^7.26.11"
 
