@@ -1,7 +1,10 @@
-import hideLoadingScreenInstanceInitializer from '../instance-initializers/hide-loading-screen';
-import { VERSION } from '@ember/version';
+import hideLoadingScreenInstanceInitializer from "../instance-initializers/hide-loading-screen";
+import Ember from "ember";
 
 const EMBER_VERSION_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:(?:-(alpha|beta)\.([0-9]+)(?:\.([0-9]+))?)?)?(?:\+(canary))?(?:\.([0-9abcdef]+))?(?:-([A-Za-z0-9.-]+))?(?:\+([A-Za-z0-9.-]+))?$/;
+
+// eslint-disable-next-line ember/new-module-imports
+const { VERSION } = Ember;
 
 /**
  * VERSION_INFO[i] is as follows:
@@ -30,6 +33,6 @@ export function initialize() {
 }
 
 export default {
-  name: 'hide-loading-screen',
+  name: "hide-loading-screen",
   initialize
 };
