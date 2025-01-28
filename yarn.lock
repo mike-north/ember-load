@@ -5787,10 +5787,10 @@ ember-cli-string-utils@^1.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-string-utils/-/ember-cli-string-utils-1.1.0.tgz#39b677fc2805f55173735376fcef278eaa4452a1"
   integrity sha512-PlJt4fUDyBrC/0X+4cOpaGCiMawaaB//qD85AXmDRikxhxVzfVdpuoec02HSiTGTTB85qCIzWBIh8lDOiMyyFg==
 
-ember-cli-template-lint@1.0.0-beta.3:
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0-beta.3.tgz#48f2fa43e7ad0172685fa171e5acd4d75b873792"
-  integrity sha512-ivrvYih+cx7VUlyyMQBmk61Ki+gT5axfppWrk6fSvHaoxHZadXU3zRJMT5DPkeRaayRu0y1dls4wqfrUhzQ1PA==
+ember-cli-template-lint@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0.tgz#8ca8f5f05fdcad35c13f26b65fb93c016196bdc9"
+  integrity sha512-acWyJUvRFo2aA/0kqeUxfCPwLtPk3ckZ/1I0BzBX9qW/Gi8qWqYnwnI/vEotIqmsQl+npbl0/SXeQHFrUdyB0g==
   dependencies:
     aot-test-generators "^0.1.0"
     broccoli-concat "^3.7.1"
@@ -5798,7 +5798,7 @@ ember-cli-template-lint@1.0.0-beta.3:
     chalk "^2.4.1"
     debug "^4.0.1"
     ember-cli-version-checker "^3.0.1"
-    ember-template-lint "^1.1.0"
+    ember-template-lint "^1.2.0"
     json-stable-stringify "^1.0.1"
     md5-hex "^2.0.0"
     strip-ansi "^4.0.0"
@@ -6147,7 +6147,7 @@ ember-source@5.7.0:
     silent-error "^1.1.1"
     simple-html-tokenizer "^0.5.11"
 
-ember-template-lint@^1.1.0:
+ember-template-lint@^1.2.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-1.14.0.tgz#fd3e8ec600b0b3de16b5701bf02acc99d192008e"
   integrity sha512-M4CebpUZ6G8NEX05FsvlB6nFRO9Xi3eJWbGbnHI1Sakyp5Hl739fTPR5yPn/Gscc/sgNU25Rq1RSm0hoevrYGA==
