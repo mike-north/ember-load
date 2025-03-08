@@ -44,10 +44,10 @@
     json5 "^2.2.3"
     semver "^6.3.1"
 
-"@babel/eslint-parser@7.23.10":
-  version "7.23.10"
-  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.23.10.tgz#2d4164842d6db798873b40e0c4238827084667a2"
-  integrity sha512-3wSYDPZVnhseRnxRJH6ZVTNknBz76AEnyC+AYYhasjP3Yy23qz0ERR7Fcd2SHmYuSFJ2kY9gaaDd3vyqU09eSw==
+"@babel/eslint-parser@^7.23.10":
+  version "7.26.8"
+  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.26.8.tgz#55c4f4aae4970ae127f7a12369182ed6250e6f09"
+  integrity sha512-3tBctaHRW6xSub26z7n8uyOTwwUsCdvIug/oxBH9n6yCO5hMj2vwDJAo7RbBMKrM7P+W2j61zLKviJQFGOYKMg==
   dependencies:
     "@nicolo-ribaudo/eslint-scope-5-internals" "5.1.1-v1"
     eslint-visitor-keys "^2.1.0"
@@ -4929,10 +4929,10 @@ content-disposition@0.5.4:
   dependencies:
     safe-buffer "5.2.1"
 
-content-tag@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-1.2.2.tgz#8cbc3cdb9957a81f7c425b138e334330dd6fd78d"
-  integrity sha512-9guqKIx2H+78N17otBpl8yLZbQGL5q1vBO/jDb3gF2JjixtcVpC62jDUNxjVMNoaZ09oxRX84ZOD6VX02qkVvg==
+content-tag@^2.0.1:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-2.0.3.tgz#52b72285256ae0aa49e86b1b5923764df472d61c"
+  integrity sha512-htLIdtfhhKW2fHlFLnZH7GFzHSdSpHhDLrWVswkNiiPMZ5uXq5JfrGboQKFhNQuAAFF8VNB2EYUj3MsdJrKKpg==
 
 content-type@~1.0.4:
   version "1.0.5"
@@ -5661,13 +5661,13 @@ ember-cli-babel@^8.0.0:
     resolve-package-path "^4.0.3"
     semver "^7.3.8"
 
-ember-cli-dependency-checker@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-3.3.2.tgz#94ed7e8e3d47e494082eb9ccfaa489d603ab6017"
-  integrity sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==
+ember-cli-dependency-checker@3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-3.3.3.tgz#a920d3d39c4edb3c4c0a25158142a6e89b2b07ad"
+  integrity sha512-mvp+HrE0M5Zhc2oW8cqs8wdhtqq0CfQXAYzaIstOzHJJn/U01NZEGu3hz7J7zl/+jxZkyygylzcS57QqmPXMuQ==
   dependencies:
     chalk "^2.4.2"
-    find-yarn-workspace-root "^1.2.1"
+    find-yarn-workspace-root "^2.0.0"
     is-git-url "^1.0.0"
     resolve "^1.22.0"
     semver "^5.7.1"
@@ -6016,16 +6016,18 @@ ember-disable-proxy-controllers@1.0.2:
   dependencies:
     ember-cli-babel "^6.16.0"
 
-ember-eslint-parser@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.4.3.tgz#a7ca3c380872719610b94c7a06cc550ced745031"
-  integrity sha512-wMPoaaA+i/F/tPPxURRON9XXJH5MRUOZ5x/9CVJTSpL+0n4EWphyztb20gR+ZJeShnOACQpAdFy6YSS1/JSHKw==
+ember-eslint-parser@^0.5.2:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.5.9.tgz#f942c4863866e24a6243c390f743cbe0354d68a6"
+  integrity sha512-IW4/3cEiFp49M2LiKyzi7VcT1egogOe8UxQ9eUKTooenC7Q4qNhzTD6rOZ8j51m8iJC+8hCzjbNCa3K4CN0Hhg==
   dependencies:
-    "@babel/eslint-parser" "7.23.10"
+    "@babel/eslint-parser" "^7.23.10"
     "@glimmer/syntax" "^0.92.0"
-    content-tag "^1.2.2"
+    content-tag "^2.0.1"
     eslint-scope "^7.2.2"
     html-tags "^3.3.1"
+    mathml-tag-names "^2.1.3"
+    svg-tags "^1.0.0"
 
 ember-export-application-global@2.0.1:
   version "2.0.1"
@@ -6059,10 +6061,10 @@ ember-qunit@8.0.2:
     "@embroider/macros" "^1.13.1"
     ember-cli-test-loader "^3.1.0"
 
-ember-resolver@13.0.1:
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-13.0.1.tgz#62b0e284079ea55d7918a29a53fcfa0507137151"
-  integrity sha512-+F0lX8P9pBwE1hf8PMhe7ftT3f9PQSQwIXPN1qc9Aiij5V/GDVTdd+j4+CSj6tCHlf6ylADGxs4c6mofs/sDvQ==
+ember-resolver@13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-13.0.2.tgz#c50269b35b0faef6b95d959e45768fab0536149c"
+  integrity sha512-9G8CVjjI4Q6vx2+FYg8YeLu+/fP4eBL/1+qp5bzwtXQ7G3xkg0YRpcufIdsBjf5K2SUStU83qhNH2O6aanf3nw==
   dependencies:
     ember-cli-babel "^7.26.11"
 
@@ -6453,14 +6455,14 @@ escape-string-regexp@^5.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
   integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
-eslint-plugin-ember@12.2.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-12.2.0.tgz#6f584c941debd41f174ad022a117ee0d52a20103"
-  integrity sha512-Pf0LB70qzrGqbxrieASFDqxvGu7/xgejM78Kj+VsH27XqkuoluF1M5fBU5xxNB7oRCpA5IFA5jdN9WnnSjLzKA==
+eslint-plugin-ember@12.2.1:
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-12.2.1.tgz#14d2901434d647bb255bd859344c70def7ca5f75"
+  integrity sha512-HZZueTKXmQRDVxREiMLdh87sLFmmkjH3z37gsS0pLWtnZECJiG447GCd+odVgWpSKoDpB4Hce0BtoJeY2HGSlg==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^2.3.1"
-    ember-eslint-parser "^0.4.3"
+    ember-eslint-parser "^0.5.2"
     ember-rfc176-data "^0.3.18"
     eslint-utils "^3.0.0"
     estraverse "^5.3.0"
@@ -7167,14 +7169,6 @@ find-versions@^3.0.0:
   integrity sha512-P8WRou2S+oe222TOCHitLy8zj+SIsVJh52VP4lvXkaFVnOFFdoWv1H1Jjvel1aI6NCFOAaeAVm8qrI0odiLcww==
   dependencies:
     semver-regex "^2.0.0"
-
-find-yarn-workspace-root@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/find-yarn-workspace-root/-/find-yarn-workspace-root-1.2.1.tgz#40eb8e6e7c2502ddfaa2577c176f221422f860db"
-  integrity sha512-dVtfb0WuQG+8Ag2uWkbG79hOUzEsRrhBzgfn86g2sJPkzmcpGdghbNTfUKGTxymFrY/tLIodDzLoW9nOJ4FY8Q==
-  dependencies:
-    fs-extra "^4.0.3"
-    micromatch "^3.1.4"
 
 find-yarn-workspace-root@^2.0.0:
   version "2.0.0"
@@ -10268,6 +10262,11 @@ matcher-collection@^2.0.0, matcher-collection@^2.0.1:
   dependencies:
     "@types/minimatch" "^3.0.3"
     minimatch "^3.0.2"
+
+mathml-tag-names@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/mathml-tag-names/-/mathml-tag-names-2.1.3.tgz#4ddadd67308e780cf16a47685878ee27b736a0a3"
+  integrity sha512-APMBEanjybaPzUrfqU0IMU5I0AswKMH7k8OTLs0vvV4KZpExkTkY87nR/zpbuTPj+gARop7aGUbl11pnDfW6xg==
 
 md5-hex@^2.0.0:
   version "2.0.0"
@@ -14083,6 +14082,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+svg-tags@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
+  integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
 symlink-or-copy@^1.0.0, symlink-or-copy@^1.0.1, symlink-or-copy@^1.1.8, symlink-or-copy@^1.2.0, symlink-or-copy@^1.3.1:
   version "1.3.1"
